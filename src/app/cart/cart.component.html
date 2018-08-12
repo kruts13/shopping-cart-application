@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>title</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+     <ul class="list-type" id="list-all-names">
+        <li class="snippet" *ngFor="let itemDrink of drinkNames; let i=index">
+          <div class="list-all" >
+            <div class="list-description" (click)="goTo(item[1])">
+              <h3 class="snippet-title">{{itemDrink}}</h3>
+              <p class="snippet-subtitle">{{modifiers[i]}}</p>
+              <p class="snippet-subtitle" *ngIf="whipCream[i] > 0">WhippedCream: yes</p>
+            </div>
+            <i class="fa fa-trash trash" (click)="deleteItem(i)"></i>
+          </div>
+          <hr>
+        </li>
+      </ul>
+      <div class="total">Your total Price: ${{total}}</div>
+      <br>
+      <div>Thank you for shopping with us! Hope you enjoy your drink!</div>
+   </body>
+</html>

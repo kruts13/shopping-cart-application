@@ -1,0 +1,114 @@
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+#decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+#increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.addto-cart {
+  cursor: pointer;
+}
+
+.drink1, .drink2, .drink3, .drink4, .drink5 {
+  border: 1px solid black;
+  margin: 10px;
+  width: 100%;
+}
+
+/* responsive css */
+
+#drink-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drinkBox {
+  width: 100%;
+}
+
+@media screen and (min-width: 471px) and (max-width: 640px) {
+  .drink1 {
+    width: 33%;
+    order: 0;
+  }
+  .drink2 {
+    width: 33%;
+    order: 1;
+  }
+  .drink3 {
+    width: 33%;
+    order: 2;
+  }
+  .drink4 {
+    width: 33%;
+    order: 3;
+  }
+  .drink5 {
+    width: 33%;
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .drink1 {
+    width: 30%;
+    order: 0;
+  }
+  .drink2 {
+    width: 30%;
+    order: 1;
+  }
+  .drink3 {
+    width: 30%;
+    order: 2;
+  }
+  .drink4 {
+    width: 30%;
+    order: 3;
+  }
+  .drink5 {
+    width: 30%;
+    order: 4;
+  }
+}

@@ -1,0 +1,25 @@
+nav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #b4a9a9;
+}
+
+a {
+  float: left;
+}
+
+nav {
+  display: block;
+  padding: 10px;
+  color: #666;
+}
+
+.nav-links {
+  padding-right: 10%;
+  text-decoration: none;
+  cursor: pointer;
+  color: #492e2e;
+  font-size: 20px;
+}

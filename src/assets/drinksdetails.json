@@ -1,0 +1,110 @@
+{
+  "Coffee": [
+    {
+      "name":"Blonde Roast",
+      "basePrice":"1.30",
+      "imageURL": "../assets/images/blondeRoast.jpg"
+    },
+    {
+      "name":"Featured Dark Roast",
+      "basePrice":"1.50",
+      "imageURL": "../assets/images/featuredDarkRoast.jpg"
+    },
+    {
+      "name":"Caffe Misto",
+      "basePrice":"1.40",
+      "imageURL": "../assets/images/caffeMisto.jpg"
+    },
+    {
+      "name":"Cold Foam Cold Brew",
+      "basePrice":"1.60",
+      "imageURL": "../assets/images/coldFoamBrewMilk.jpg"
+    },
+    {
+      "name":"Iced Coffee",
+      "basePrice":"1.20",
+      "imageURL": "../assets/images/icedCoffee.jpg"
+    }
+  ],
+  "Tea": [
+    {
+      "name":"Chai Latte",
+      "basePrice":"1.20",
+      "imageURL": "../assets/images/chaiLatte.jpg"
+    },
+    {
+      "name":"Green Tea Latte",
+      "basePrice":"1.40",
+      "imageURL": "../assets/images/greenTea.jpg"
+    },
+    {
+      "name":"Lightly Sweet Chai Tea Latte",
+      "basePrice":"1.30",
+      "imageURL": "../assets/images/lightChai.jpg"
+    },
+    {
+      "name":"Honey Citrus Mint Tea",
+      "basePrice":"1.45",
+      "imageURL": "../assets/images/honeyCitrus.jpg"
+    },
+    {
+      "name":"Herbal Tea",
+      "basePrice":"1.25",
+      "imageURL": "../assets/images/herbal.jpg"
+    }
+  ],
+  "Chocolate Beverages": [
+    {
+      "name":"Hot Chocolate",
+      "basePrice":"2.10",
+      "imageURL": "../assets/images/hotChocolate.jpg"
+    },
+    {
+      "name":"White Chocolate",
+      "basePrice":"1.90",
+      "imageURL": "../assets/images/whiteChocolate.jpg"
+    },
+    {
+      "name":"Caffe Mocha",
+      "basePrice":"1.50",
+      "imageURL": "../assets/images/caffeMocha.jpg"
+    },
+    {
+      "name":"Skinny Mocha",
+      "basePrice":"1.15",
+      "imageURL": "../assets/images/skinnyMocha.jpg"
+    },
+    {
+      "name":"Double Chocolate Chip Frappuccino",
+      "basePrice":"2.25",
+      "imageURL": "../assets/images/doubleChip.jpg"
+    }
+  ],
+  "Refreshers": [
+    {
+      "name":"Cool Lime Lemonade",
+      "basePrice":"1.35",
+      "imageURL": "../assets/images/coolLime.jpg"
+    },
+    {
+      "name":"Strawberry Lemonade",
+      "basePrice":"1.85",
+      "imageURL": "../assets/images/strawberry.jpg"
+    },
+    {
+      "name":"Blueberry Lemonade",
+      "basePrice":"1.55",
+      "imageURL": "../assets/images/blueberry.jpg"
+    },
+    {
+      "name":"Mango Dragonfruit Lemonade",
+      "basePrice":"2.15",
+      "imageURL": "../assets/images/mangoDragon.jpg"
+    },
+    {
+      "name":"Berry Hibiscus Lemonade",
+      "basePrice":"2.05",
+      "imageURL": "../assets/images/berryHib.jpg"
+    }
+  ]
+}

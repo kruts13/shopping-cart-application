@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>title</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div id="drink-container">
+         <div class="drinkBox drink{{i+1}}" *ngFor="let item of jsonData[getKey]; let i=index">
+            <h4>{{jsonData[getKey][i].name}}</h4>
+            <h5>Price: {{jsonData[getKey][i].basePrice}}</h5>
+            <img [src]="jsonData[getKey][i].imageURL" class="drink-images" alt="">
+
+            <h5>Modifiers</h5>
+            <select id="dropdown" class="drop-down" (change)="onChange($event, i)">
+               <option value="blank" id="blank" selected>Modify your drink!</option>
+               <option value="sugar" id="sugar">Sugar</option>
+               <option value="milk" id="milk">Milk</option>
+               <option value="chocSyrup" id="chocolate">Chocolate Syrup</option>
+            </select>
+
+            <h5>How many teaspoons of  do you want? (1tsp = $0.30)</h5>
+            <div class="value-button" id="decrease" (click)="decreaseValue(i)" value="Decrease Value">-</div>
+            <input type="number" id="number" class="number-tsp" value="0" />
+            <div class="value-button" id="increase" (click)="increaseValue(i)" value="Increase Value">+</div>
+
+            <h5>Would you like to top it up with whipped cream? (+$0.50)</h5>
+            <select class="whip-cream-option">
+               <option value="none"></option>
+               <option value="yes">Yes</option>
+               <option value="no">No</option>
+            </select>
+
+            <h5>Price</h5>
+            <p class="show-price">{{showPrice(i)}}</p>
+            <button class="show-all" (click)="showAllItems(i)">Click Here after each Selection</button>
+            <br><br>
+            <div class="show-all-items"></div>
+            <button class="addto-cart" (click)="addToCart(i)">Add to Cart</button>
+         </div>
+      </div>
+   </body>
+</html>
